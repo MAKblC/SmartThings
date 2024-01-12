@@ -1,16 +1,16 @@
-#include <FastLED.h> // библиотеки для FastLED
+#include <FastLED.h> 
 #include <FastLED_GFX.h>
 #include <FastLEDMatrix.h>
-#define NUM_LEDS 8 // количество светодиодов в матрице  
-CRGB leds[NUM_LEDS]; // определяем матрицу (FastLED библиотека)
-#define LED_PIN 18 // пин к которому подключена матрица 
-#define COLOR_ORDER GRB // порядок цветов матрицы 
-#define CHIPSET WS2812 // тип светодиодов    
+#define NUM_LEDS 8  
+CRGB leds[NUM_LEDS]; 
+#define LED_PIN 18 
+#define COLOR_ORDER GRB  
+#define CHIPSET WS2812   
 uint16_t half = NUM_LEDS/2;
 
 void setup() {
-  FastLED.addLeds<NEOPIXEL, LED_PIN>(leds, NUM_LEDS); // конфигурация матрицы // matrix configuration
-  FastLED.setBrightness(90); // яркость (0-255), не рекомендуется выставлять много, особенно при питании через USB
+  FastLED.addLeds<NEOPIXEL, LED_PIN>(leds, NUM_LEDS); 
+  FastLED.setBrightness(90); 
 }
 
 void loop() {
