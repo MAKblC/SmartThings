@@ -1,6 +1,6 @@
 # Примеры кодов для методического пособия образовательного набора "Основы умных устройств"
 
-![Device image](https://books.mgbot.ru/images/IOTIK32B-2-3.PNG)
+![Device image](https://books.mgbot.ru/images/IOTIK32A-2-3.PNG)
 
 https://mgbot.ru  - Сайт производителя (Интернет-магазин)
 
