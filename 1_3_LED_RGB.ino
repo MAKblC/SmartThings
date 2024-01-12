@@ -19,13 +19,13 @@ void loop() {
   }
   FastLED.show();
   delay(2000);
-  // "стремление к белому"
+  // "стремление от белого"
   for (int i = 0; i < NUM_LEDS; i++) {
     leds[i].setHSV(255, i * 255 / NUM_LEDS, 255);
   }
   FastLED.show();
   delay(2000);
-  // "стремление к черному"
+  // "стремление от черного"
   for (int i = 0; i < NUM_LEDS; i++) {
     leds[i].setHSV(255, 255, i * 255 / NUM_LEDS);
   }
