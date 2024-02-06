@@ -14,5 +14,4 @@ void loop() {
   myservo.write(10);
   Serial.println(myservo.read());
   delay(1000);
-
 }
