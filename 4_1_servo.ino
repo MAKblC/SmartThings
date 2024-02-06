@@ -6,7 +6,7 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 0; i < 181; i++) {
+  for (int i = 0; i < 181; i++) { // цикл плавного поворота
     myservo.write(i);
     delay(30);
   }
