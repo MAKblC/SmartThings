@@ -1,7 +1,7 @@
-#include <Wire.h>
-#include <Adafruit_Sensor.h>
+#include <Wire.h> // библиотека I2C
+#include <Adafruit_Sensor.h> // библиотеки для датчика
 #include <Adafruit_BME280.h>
-Adafruit_BME280 bme280;
+Adafruit_BME280 bme280; // экземпляр объекта
 
 void setup() {
   // Инициализация последовательного порта
