@@ -8,6 +8,6 @@ void setup() {
 
 void loop() {
   raw = analogRead(pinPhoto); // считываем значение
-  Serial.println( raw );
+  Serial.println(raw);
   delay(200);
 }
