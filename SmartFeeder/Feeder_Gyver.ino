@@ -143,11 +143,17 @@ void loop() {
         leds[i].setRGB(0, 0, 0);
       }
     }
-    for (int i = 15; i < 22; i++) {
-      leds[i].setRGB(0, 255 * (inp6 - food_uptime) / inp6, 0);
+    for (int i = 15; i < (15 + (7 * (inp6 - food_uptime) / inp6)); i++) {
+      leds[i].setRGB(0, 255, 0);
     }
-    for (int i = 22; i < 30; i++) {
-      leds[i].setRGB(0, 0, 255 * (inp4 - water_uptime) / inp4);
+    for (int i = (15 + (7 * (inp6 - food_uptime) / inp6)); i < 22; i++) {
+      leds[i].setRGB(0, 0, 0);
+    }
+    for (int i = 22; i < (22 + (8 * (inp4 - water_uptime) / inp4)); i++) {
+      leds[i].setRGB(0, 0, 255);
+    }
+    for (int i = (22 + (8 * (inp4 - water_uptime) / inp4)); i < 30; i++) {
+      leds[i].setRGB(0, 0, 0);
     }
     FastLED.show();
   }
